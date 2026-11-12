@@ -1,25 +1,58 @@
-\subsection{Actores del proceso}
+\subsection{Actores del proceso en el escenario 3}
 
 \begin{center}
 \small
 \begin{tabularx}{\textwidth}{|L|L|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Actor del escenario}} & \textcolor{white}{\textbf{Rol en el proceso de requisitos}} & \textcolor{white}{\textbf{Cuándo y cómo participa}} \\ \hline
- & & \\ \hline
- & & \\ \hline
- & & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Actor del escenario}} & \textcolor{white}{\textbf{Rol en el proceso de requisitos}} & \textcolor{white}{\textbf{Cuándo y cómo participa}} \\ \hline
+GAD municipal y administrador del contrato &
+El GAD es la entidad contratante. El administrador es el canal oficial para coordinar requisitos, aprobaciones y solicitudes de cambio. &
+Participa en reuniones semanales y gestiona la aprobación de los entregables de los meses 2, 6 y 7. \\ \hline
+Jefa de rentas &
+Explica el flujo de patentes y las reglas usadas para calcular las tasas municipales. &
+Interviene cuando el administrador la convoca, especialmente al revisar el flujo de aprobación y los cambios de cobros. \\ \hline
+Técnicos de ventanilla &
+Describen cómo se reciben y revisan los trámites y qué dificultades tienen con los expedientes en papel. &
+Participan en entrevistas y revisiones convocadas por el administrador; validan los pasos habituales de atención. \\ \hline
+Ciudadanos que realizan trámites &
+Son usuarios finales del portal; sus necesidades ayudan a definir consultas, solicitudes y seguimiento en línea. &
+Su participación debe organizarse y autorizarse dentro del proceso; el escenario no indica entrevistas ya realizadas. \\ \hline
+Concejo municipal y normativa aplicable &
+El concejo podría modificar la ordenanza de tasas. Los pliegos de contratación y la protección de datos imponen restricciones. &
+Sus decisiones se revisan al definir la ERS y cuando exista una modificación normativa, especialmente alrededor del mes 4. \\ \hline
+Equipo contratista (6 personas) &
+Sus integrantes designados analizan requisitos, documentan acuerdos, desarrollan el sistema y preparan pruebas. &
+Trabaja durante los siete meses, realiza revisiones internas y presenta resultados para validación por el canal oficial. \\ \hline
 \end{tabularx}
 \end{center}
 
-\subsection{Framework de IR por fase o iteración}
+\subsection{Framework de Ingeniería de Requisitos por fases}
 
 \begin{center}
-\small
+\footnotesize
 \begin{tabularx}{\textwidth}{|L|L|L|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Fase o iteración}} & \textcolor{white}{\textbf{Actividades centrales (elicitación, documentación, negociación)}} & \textcolor{white}{\textbf{Actividades transversales (validación, gestión)}} & \textcolor{white}{\textbf{Artefactos producidos}} \\ \hline
- & & & \\ \hline
- & & & \\ \hline
- & & & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Fase o iteración}} &
+\textcolor{white}{\textbf{Actividades centrales: elicitación, documentación y negociación}} &
+\textcolor{white}{\textbf{Actividades transversales: validación y gestión}} &
+\textcolor{white}{\textbf{Artefactos producidos}} \\ \hline
+Inicio y aprobación (meses 1--2) &
+Recoger las necesidades de ventanilla y rentas, describir los trámites y acordar el alcance con el administrador del contrato. &
+Revisar los requisitos con los usuarios convocados; controlar versiones y registrar su aprobación en el mes 2. &
+Metas del proyecto, escenarios de trámite, límites del sistema y ERS aprobada como línea base. \\ \hline
+Prueba de integración (inicio del desarrollo) &
+Investigar la estructura de la base catastral antigua, documentar los datos necesarios y acordar cómo consultarlos. &
+Validar una prueba de conexión y mantener trazabilidad entre los datos del catastro y los requisitos afectados. &
+Escenario de consulta catastral, requisitos de interfaz y registro de resultados de la prueba técnica. \\ \hline
+Incrementos de trámites y cobros (hasta el mes 6) &
+Refinar solicitudes, patentes y cálculos de tasas; negociar mediante el administrador los cambios por una posible ordenanza. &
+Validar cada incremento con pruebas y usuarios convocados; actualizar versiones, decisiones y solicitudes de cambio. &
+Escenarios de uso, requisitos detallados, criterios de aceptación, matriz de trazabilidad y versiones de la ERS. \\ \hline
+Pruebas, capacitación y cierre (meses 6--7) &
+Acordar correcciones pendientes y documentar instrucciones para los funcionarios que operarán el sistema. &
+Comprobar el sistema instalado, controlar incidencias y verificar los compromisos del contrato antes del cierre. &
+Resultados de pruebas, manuales, registro de incidencias y acta de entrega-recepción definitiva. \\ \hline
 \end{tabularx}
 \end{center}
