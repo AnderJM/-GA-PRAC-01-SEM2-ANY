@@ -1,15 +1,34 @@
 \subsection{Matriz comparativa del escenario 3}
 
 \begin{center}
-\small
+\footnotesize
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|L|L|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Criterio}} & \textcolor{white}{\textbf{Secuencial (cascada)}} & \textcolor{white}{\textbf{Iterativo e incremental}} & \textcolor{white}{\textbf{Ágil}} \\ \hline
-K1. Estabilidad y cambios & & & \\ \hline
-K2. Partes interesadas y disponibilidad & & & \\ \hline
-K3. Tipo de sistema y criticidad & & & \\ \hline
-K4. Riesgo principal & & & \\ \hline
-K5. Documentación y marco normativo o contractual & & & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Criterio}} &
+\textcolor{white}{\textbf{Secuencial (cascada)}} &
+\textcolor{white}{\textbf{Iterativo e incremental}} &
+\textcolor{white}{\textbf{Ágil}} \\ \hline
+K1. Estabilidad y cambios &
+La ERS debe aprobarse en el mes 2. Los cambios del flujo de patentes y la posible ordenanza obligarían a tramitar modificaciones formales después de esa aprobación. &
+Permite revisar en ciclos el flujo de patentes y adaptar el cálculo de tasas si cambia la ordenanza, sin perder el control de la versión aprobada. &
+Ayudaría a ajustar el flujo y las tasas con rapidez, pero los cambios de alcance siguen sujetos a trámites contractuales que pueden durar semanas. \\ \hline
+K2. Partes interesadas y disponibilidad &
+Las aprobaciones por fase se pueden coordinar con el administrador del contrato, que es el único canal oficial y se reúne semanalmente. &
+Las revisiones de cada incremento pueden programarse con el administrador; para validar con ventanilla y rentas, él debe convocar a esos usuarios. &
+La priorización frecuente se complica: el administrador atiende una vez por semana y los usuarios finales no pueden participar libremente en cada ciclo. \\ \hline
+K3. Tipo de sistema y criticidad &
+Al manejar cobros y datos ciudadanos, una especificación formal ayuda a documentar reglas y controles antes de construir el sistema web. &
+Permite probar por partes los trámites, las tasas y el acceso a datos, detectando errores antes de la instalación prevista para el mes 6. &
+Las entregas cortas permitirían mostrar pantallas, pero no bastaría una lista de tareas sin pruebas y registros formales sobre cobros y datos. \\ \hline
+K4. Riesgo principal &
+La base catastral antigua no tiene documentación. Si su integración se analiza tarde, puede comprometer la entrega del sistema en el mes 6. &
+Un incremento técnico temprano puede comprobar cómo leer los datos catastrales y reducir el riesgo de descubrir incompatibilidades al final. &
+Un prototipo temprano también ayudaría, aunque las decisiones sobre acceso y cambios deben pasar por el canal contractual del GAD. \\ \hline
+K5. Documentación y contrato &
+Se ajusta a los hitos pactados: ERS aprobada en el mes 2, sistema probado en el mes 6 y acta de entrega en el mes 7. &
+Puede mantener la ERS y la trazabilidad actualizadas en cada ciclo y conservar las aprobaciones exigidas en los pliegos. &
+El backlog resulta útil para organizar tareas, pero no reemplaza la ERS aprobada ni las actas y pruebas exigidas para cobrar los hitos. \\ \hline
 \end{tabularx}
 \end{center}
 
@@ -19,14 +38,23 @@ K5. Documentación y marco normativo o contractual & & & \\ \hline
 \small
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.5cm}|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Elemento}} & \textcolor{white}{\textbf{Respuesta}} \\ \hline
-Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & \\ \hline
-Razón 1 (dato del escenario, criterio y consecuencia) & \\ \hline
-Razón 2 & \\ \hline
-Razón 3 & \\ \hline
-Por qué se descartan los otros dos modelos & \\ \hline
-Tensión principal del escenario (el dato que apunta a otro modelo) & \\ \hline
-Riesgo 1 del modelo elegido y su mitigación & \\ \hline
-Riesgo 2 del modelo elegido y su mitigación & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Elemento}} & \textcolor{white}{\textbf{Respuesta}} \\ \hline
+Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) &
+Se propone un enfoque híbrido: control secuencial para aprobar la ERS, gestionar cambios del contrato y cerrar los hitos; trabajo iterativo e incremental para comprobar la integración catastral y desarrollar los módulos de trámites y cobros. \\ \hline
+Razón 1 (dato del escenario, criterio y consecuencia) &
+K5: el contrato exige una ERS aprobada en el mes 2 y tres entregables con pago asociado. Por ello, conviene una línea base formal que permita demostrar qué se acordó en cada hito. \\ \hline
+Razón 2 &
+K1: la jefa de rentas ya cambió dos veces el flujo de patentes y se prevé una posible ordenanza en el mes 4. Trabajar por ciclos ayuda a revisar esas partes sin rehacer todo el sistema. \\ \hline
+Razón 3 &
+K4: la base catastral antigua carece de documentación. Probar la integración en un incremento temprano reduce la posibilidad de descubrir un bloqueo técnico cerca de la entrega del mes 6. \\ \hline
+Por qué se descartan los otros dos modelos &
+No se recomienda cascada pura: congelar todo en el mes 2 dejaría poco margen ante los cambios de patentes, tasas e integración. Tampoco se recomienda ágil puro: el cliente no participa a diario y el contrato exige documentos, aprobaciones y trámites formales para cambiar el alcance. \\ \hline
+Tensión principal del escenario (el dato que apunta a otro modelo) &
+El contrato empuja hacia la planificación secuencial, pero las modificaciones del flujo de patentes, la posible ordenanza y la base catastral desconocida requieren revisión iterativa. \\ \hline
+Riesgo 1 del modelo elegido y su mitigación &
+Riesgo: que cada incremento introduzca cambios que contradigan la ERS aprobada. Mitigación: mantener una matriz de trazabilidad y registrar con el administrador cada solicitud de cambio antes de modificar el alcance contractual. \\ \hline
+Riesgo 2 del modelo elegido y su mitigación &
+Riesgo: que la integración con el catastro retrase las pruebas del mes 6. Mitigación: hacer una prueba técnica de lectura de datos al comienzo, documentar los campos disponibles y reservar tiempo para corregir incompatibilidades. \\ \hline
 \end{tabularx}
 \end{center}
