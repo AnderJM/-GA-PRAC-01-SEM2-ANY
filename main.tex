@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noquoting]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+
+\definecolor{verdeuteq}{RGB}{27,117,5}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.3}
+
+\title{GA-PRAC-01: Comparación entre modelos de proceso de requisitos en escenarios reales}
+\author{
+  Grupo ANY\\[4pt]
+  Aldas Zambrano Alan Andrés\\
+  Naranjo Flores Anderson Jeampiere\\
+  Yépez Guagua Luis Antonio\\[6pt]
+  Ingeniería de Requerimientos (ISR-401), 4.º nivel, paralelo A\\
+  Docente: Ing. Gleiston Cicerón Guerrero Ulloa, PhD\\
+  Universidad Técnica Estatal de Quevedo
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Criterios de comparación}
+\label{sec:criterios}
+
+\section{Escenario 1. Extractora de aceite de palma}
+\input{escenarios/e1}
+
+\section{Escenario 2. Aplicación móvil de pedidos de comida típica}
+\input{escenarios/e2}
+
+\section{Escenario 3. Trámites municipales por contratación pública}
+\input{escenarios/e3}
+
+\section{Escenario 4. Plataforma web de la cooperativa de cacao}
+\input{escenarios/e4}
+
+\section{Actores y framework de IR en el escenario elegido}
+\input{escenarios/framework}
+
+\section{Declaración de uso de IA}
+
+% \bibliographystyle{IEEEtran}
+% \bibliography{referencias}
+
+\end{document}
