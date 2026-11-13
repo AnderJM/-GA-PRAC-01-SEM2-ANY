@@ -4,12 +4,36 @@
 \small
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|L|L|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Criterio}} & \textcolor{white}{\textbf{Secuencial (cascada)}} & \textcolor{white}{\textbf{Iterativo e incremental}} & \textcolor{white}{\textbf{Ágil}} \\ \hline
-K1. Estabilidad y cambios & & & \\ \hline
-K2. Partes interesadas y disponibilidad & & & \\ \hline
-K3. Tipo de sistema y criticidad & & & \\ \hline
-K4. Riesgo principal & & & \\ \hline
-K5. Documentación y marco normativo o contractual & & & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Criterio}}
+& \textcolor{white}{\textbf{Secuencial (cascada)}}
+& \textcolor{white}{\textbf{Iterativo e incremental}}
+& \textcolor{white}{\textbf{Ágil}} \\ \hline
+K1. Estabilidad y cambios
+& Las reglas de liquidación del estatuto pueden definirse al inicio. Un cambio posterior en la trazabilidad solicitada por un exportador exigiría revisar el alcance aprobado.
+& Cada ciclo puede ajustar la trazabilidad según la temporada, manteniendo las reglas de liquidación ya aprobadas.
+& Las exigencias de los exportadores pueden entrar en la lista de prioridades del siguiente ciclo. Los cambios importantes siguen sujetos a la aprobación de la directiva.
+\\ \hline
+K2. Partes interesadas y disponibilidad
+& La definición inicial debe coordinarse con la reunión mensual de la directiva y con los días de acopio, cuando se puede consultar a los socios.
+& La gerente puede revisar versiones casi a diario. El equipo puede probarlas con socios en días de acopio y llevar las decisiones importantes a la reunión mensual.
+& La gerente puede resolver dudas frecuentes, pero una decisión reservada a la directiva puede quedar pendiente durante un ciclo corto.
+\\ \hline
+K3. Tipo de sistema y criticidad
+& Como la plataforma maneja pagos, créditos y datos personales de los socios, conviene acordar temprano las reglas de cálculo y los criterios de revisión.
+& Una versión de prueba permite verificar liquidaciones con ejemplos de peso, humedad y calidad antes de usar el cálculo con pagos reales.
+& Las funciones pueden entregarse por partes. El incremento que calcula liquidaciones debe pasar las pruebas del estatuto antes de usarse para pagar a los socios.
+\\ \hline
+K4. Riesgo principal
+& Si se descubre al final que se pierden entregas al recuperar la conexión, habría que corregir el registro y revisar las liquidaciones que dependen de él.
+& Un ciclo temprano permite probar el registro sin conexión en el centro de acopio y comprobar que cada entrega se sincronice una sola vez.
+& El equipo puede priorizar las pruebas de pérdida y duplicación de entregas por encima de los avisos y convocatorias.
+\\ \hline
+K5. Documentación y marco normativo o contractual
+& El estatuto sirve para documentar las reglas de liquidación desde el inicio. El plan debe prever funciones terminadas para los informes semestrales del donante.
+& Cada ciclo deja decisiones aprobadas, resultados de pruebas y evidencia de funciones terminadas que se pueden incorporar al informe semestral.
+& En cada ciclo se pueden registrar las exigencias de trazabilidad del comprador, su aprobación y las pruebas correspondientes para conservar el historial de cambios.
+\\ \hline
 \end{tabularx}
 \end{center}
 
@@ -19,14 +43,32 @@ K5. Documentación y marco normativo o contractual & & & \\ \hline
 \small
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.5cm}|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Elemento}} & \textcolor{white}{\textbf{Respuesta}} \\ \hline
-Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & \\ \hline
-Razón 1 (dato del escenario, criterio y consecuencia) & \\ \hline
-Razón 2 & \\ \hline
-Razón 3 & \\ \hline
-Por qué se descartan los otros dos modelos & \\ \hline
-Tensión principal del escenario (el dato que apunta a otro modelo) & \\ \hline
-Riesgo 1 del modelo elegido y su mitigación & \\ \hline
-Riesgo 2 del modelo elegido y su mitigación & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Elemento}}
+& \textcolor{white}{\textbf{Respuesta}} \\ \hline
+Modelo recomendado
+& Iterativo e incremental con aprobación formal de las reglas de liquidación. La gerente revisa las versiones y la directiva aprueba los cambios importantes.
+\\ \hline
+Razón 1
+& K1. Las liquidaciones siguen reglas estables del estatuto, mientras que los exportadores cambian las exigencias de trazabilidad por temporada. Los ciclos permiten ajustar la trazabilidad sin reabrir las reglas de cálculo.
+\\ \hline
+Razón 2
+& K2. La gerente está disponible casi a diario y la directiva se reúne una vez al mes. El equipo puede revisar avances con la gerente y preparar las decisiones para la reunión mensual.
+\\ \hline
+Razón 3
+& K4. La conexión en el centro de acopio es inestable. Probar el registro sin conexión en un ciclo temprano permite detectar pérdidas o duplicados antes de usar esos datos en las liquidaciones.
+\\ \hline
+Por qué se descartan los otros dos modelos
+& Un plan en cascada con alcance fijado al inicio requeriría gestionar cambios cada vez que los exportadores actualicen la trazabilidad. Un enfoque ágil con repriorización frecuente dependería de decisiones que la gerente no puede tomar sola cuando el cambio es importante.
+\\ \hline
+Tensión principal del escenario
+& Las reglas estables del estatuto y el impacto de los errores en los pagos favorecen una definición y aprobación inicial, como en cascada. Esa base aprobada puede implementarse y verificarse por ciclos.
+\\ \hline
+Riesgo 1 del modelo elegido y su mitigación
+& Retraso por decisiones pendientes de la directiva. Preparar antes de cada reunión mensual las propuestas y su impacto, y avanzar entre reuniones con las tareas que ya tienen aprobación.
+\\ \hline
+Riesgo 2 del modelo elegido y su mitigación
+& Pérdida o duplicación de entregas al sincronizar. Asignar un identificador único a cada entrega y probar cortes, reconexiones y reintentos antes de usar los registros para calcular pagos.
+\\ \hline
 \end{tabularx}
 \end{center}
