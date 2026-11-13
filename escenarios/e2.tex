@@ -4,7 +4,11 @@
 \small
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|L|L|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Criterio}} & \textcolor{white}{\textbf{Secuencial (cascada)}} & \textcolor{white}{\textbf{Iterativo e incremental}} & \textcolor{white}{\textbf{Ágil}} \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Criterio}}
+& \textcolor{white}{\textbf{Secuencial (cascada)}}
+& \textcolor{white}{\textbf{Iterativo e incremental}}
+& \textcolor{white}{\textbf{Ágil}} \\ \hline
 K1. Estabilidad y cambios
 & Si Rosa cambia de puntos a promociones después de aprobar el alcance, el equipo tendría que revisar los requisitos y el diseño afectados.
 & Una primera versión de pedidos permitiría a Rosa probar el flujo y decidir en el siguiente ciclo si incluye promociones.
@@ -39,14 +43,32 @@ K5. Documentación y marco normativo o contractual
 \small
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.5cm}|L|}
 \hline
-\rowcolor{verdeuteq}\textcolor{white}{\textbf{Elemento}} & \textcolor{white}{\textbf{Respuesta}} \\ \hline
-Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & \\ \hline
-Razón 1 (dato del escenario, criterio y consecuencia) & \\ \hline
-Razón 2 & \\ \hline
-Razón 3 & \\ \hline
-Por qué se descartan los otros dos modelos & \\ \hline
-Tensión principal del escenario (el dato que apunta a otro modelo) & \\ \hline
-Riesgo 1 del modelo elegido y su mitigación & \\ \hline
-Riesgo 2 del modelo elegido y su mitigación & \\ \hline
+\rowcolor{verdeuteq}
+\textcolor{white}{\textbf{Elemento}}
+& \textcolor{white}{\textbf{Respuesta}} \\ \hline
+Modelo recomendado
+& Ágil con un alcance mínimo acordado al inicio. La primera entrega debe cubrir el menú, los pedidos para retiro o domicilio y la conciliación de transferencias.
+\\ \hline
+Razón 1
+& K1. Rosa pasó de pedir puntos a preferir promociones. Revisar las prioridades antes de cada ciclo permite decidir qué función conviene construir primero.
+\\ \hline
+Razón 2
+& K2. Rosa está disponible casi a diario y puede probar versiones. Sus observaciones permiten resolver dudas y corregir el flujo de pedido durante el desarrollo.
+\\ \hline
+Razón 3
+& K4. Hay 14 semanas, presupuesto cerrado y dos desarrolladores a medio tiempo. Los ciclos cortos permiten comprobar pronto si el flujo principal funciona y ajustar las funciones opcionales al tiempo restante.
+\\ \hline
+Por qué se descartan los otros dos modelos
+& En cascada, cambiar de puntos a promociones después de aprobar el alcance exigiría revisar los requisitos acordados. Un enfoque iterativo centrado en perfeccionar un conjunto de funciones ya planificado ofrece menos flexibilidad para reordenar las ideas de Rosa y su hijo antes de cada ciclo.
+\\ \hline
+Tensión principal del escenario
+& La fecha fija de las fiestas y el presupuesto cerrado favorecen definir el alcance temprano, como en cascada. El equipo puede acordar primero las funciones indispensables y revisar las opcionales en cada ciclo.
+\\ \hline
+Riesgo 1 del modelo elegido y su mitigación
+& Acumulación de funciones nuevas. Si una propuesta supera la capacidad del equipo, Rosa decide qué función opcional se pospone.
+\\ \hline
+Riesgo 2 del modelo elegido y su mitigación
+& Marcar como pagado un pedido sin conciliar. Antes de habilitar las transferencias, probar un pago válido, uno pendiente y un comprobante que no corresponde al pedido.
+\\ \hline
 \end{tabularx}
 \end{center}
