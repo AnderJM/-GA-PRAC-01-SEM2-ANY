@@ -5,11 +5,31 @@
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|L|L|L|}
 \hline
 \rowcolor{verdeuteq}\textcolor{white}{\textbf{Criterio}} & \textcolor{white}{\textbf{Secuencial (cascada)}} & \textcolor{white}{\textbf{Iterativo e incremental}} & \textcolor{white}{\textbf{Ágil}} \\ \hline
-K1. Estabilidad y cambios & & & \\ \hline
-K2. Partes interesadas y disponibilidad & & & \\ \hline
-K3. Tipo de sistema y criticidad & & & \\ \hline
-K4. Riesgo principal & & & \\ \hline
-K5. Documentación y marco normativo o contractual & & & \\ \hline
+K1. Estabilidad y cambios
+& Si Rosa cambia de puntos a promociones después de aprobar el alcance, el equipo tendría que revisar los requisitos y el diseño afectados.
+& Una primera versión de pedidos permitiría a Rosa probar el flujo y decidir en el siguiente ciclo si incluye promociones.
+& Rosa puede reordenar las ideas sobre puntos y promociones al inicio de cada ciclo, según lo que más le sirva al negocio.
+\\ \hline
+K2. Partes interesadas y disponibilidad
+& Rosa puede aprobar los requisitos al inicio y revisar el producto al final. Si sus observaciones llegan tarde, corregir el flujo puede exigir rehacer trabajo.
+& Como Rosa está disponible casi a diario, puede probar cada versión y aclarar dudas antes del siguiente ciclo.
+& Rosa puede decidir las prioridades con frecuencia y su hijo aportar ideas. Con dos desarrolladores a medio tiempo, centralizar esa decisión ayuda a evitar instrucciones contradictorias.
+\\ \hline
+K3. Tipo de sistema y criticidad
+& Conviene definir desde el inicio cómo se protegen las direcciones y cómo se concilian las transferencias, porque un error puede exponer datos o dejar un pedido sin pagar.
+& Una versión temprana permite probar cómo se vincula una transferencia con su pedido y corregir el flujo antes de añadir otras funciones.
+& En el ciclo que incorpora transferencias, el equipo puede comprobar que un pedido solo aparezca como pagado después de conciliar el pago.
+\\ \hline
+K4. Riesgo principal
+& Con 14 semanas y dos desarrolladores a medio tiempo, detectar tarde un fallo de conexión deja poco margen para corregirlo.
+& Probar una versión temprana en un Android de gama baja con cortes de conexión permite ajustar el flujo de pedidos antes de ampliarlo.
+& Con presupuesto fijo, el equipo puede priorizar menú, pedidos y transferencias. Los puntos y el pago con tarjeta pueden quedar para después.
+\\ \hline
+K5. Documentación y marco normativo o contractual
+& Aunque el acuerdo de precio fijo sea informal, dejar por escrito el alcance y los criterios de aceptación permite revisar el impacto de los cambios.
+& En cada versión se pueden registrar las decisiones de Rosa y los resultados de las pruebas de conciliación.
+& En cada ciclo se pueden actualizar los requisitos sobre datos de clientes y guardar la evidencia de las pruebas de pago.
+\\ \hline
 \end{tabularx}
 \end{center}
 
