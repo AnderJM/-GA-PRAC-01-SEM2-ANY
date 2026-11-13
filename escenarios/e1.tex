@@ -20,13 +20,13 @@ K5. Documentación y marco normativo o contractual & La aseguradora exige un doc
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.5cm}|L|}
 \hline
 \rowcolor{verdeuteq}\textcolor{white}{\textbf{Elemento}} & \textcolor{white}{\textbf{Respuesta}} \\ \hline
-Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & \\ \hline
-Razón 1 (dato del escenario, criterio y consecuencia) & \\ \hline
-Razón 2 & \\ \hline
-Razón 3 & \\ \hline
-Por qué se descartan los otros dos modelos & \\ \hline
-Tensión principal del escenario (el dato que apunta a otro modelo) & \\ \hline
-Riesgo 1 del modelo elegido y su mitigación & \\ \hline
-Riesgo 2 del modelo elegido y su mitigación & \\ \hline
+Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & Un híbrido: cascada para las funciones de seguridad, porque probablemente no cambien en el futuro, e iterativo para los sensores, las pantallas y los reportes, que irán cambiando cada cierto tiempo. \\ \hline
+Razón 1 (dato del escenario, criterio y consecuencia) & K5: la aseguradora exige un documento de requisitos de seguridad aprobado y pruebas de cada función de protección, por eso la parte de seguridad debe seguir cascada. \\ \hline
+Razón 2 & K1 y K4: el proveedor de sensores se elige en el mes 3, así que esa parte debe ir en un ciclo posterior del modelo iterativo. \\ \hline
+Razón 3 & K3: en el último año hubo dos desbordes y un operador con quemaduras leves; esto obliga a que la seguridad se documente y se pruebe antes de construir, como en cascada. \\ \hline
+Por qué se descartan los otros dos modelos & No se usa cascada pura porque un cambio como el de los sensores en el mes 3 no se podría hacer sin reabrir lo aprobado. No se usa ágil porque el jefe de planta solo se reúne dos mañanas por semana y la aseguradora pide documentos aprobados. \\ \hline
+Tensión principal del escenario (el dato que apunta a otro modelo) & La seguridad y la aseguradora piden cascada, pero los sensores y las pantallas piden iterativo porque todavía no se conocen. \\ \hline
+Riesgo 1 del modelo elegido y su mitigación & Riesgo: que al conectar los sensores haya que cambiar un requisito de seguridad ya aprobado. Mitigación: tratar la conexión de los sensores en un ciclo iterativo y, si afecta a la seguridad, pedir de nuevo la aprobación del responsable de seguridad industrial. \\ \hline
+Riesgo 2 del modelo elegido y su mitigación & Riesgo: que el gerente no decida las pantallas y los reportes. Mitigación: dejarlos para el siguiente ciclo iterativo, sin usar ágil por ser algo importante, y fijar una fecha para decidirlos antes de la temporada alta. \\ \hline
 \end{tabularx}
 \end{center}
