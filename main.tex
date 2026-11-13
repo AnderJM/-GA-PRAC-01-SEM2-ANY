@@ -7,6 +7,7 @@
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{xltabular}
 \usepackage{booktabs}
 \usepackage[table]{xcolor}
 \usepackage{hyperref}
@@ -43,6 +44,7 @@ Para comparar los tres modelos de proceso~\cite{swebok2024} en cada escenario se
   \item \textbf{K5. Documentación y marco normativo o contractual:} revisa qué documentos exigen terceros, como contratos, normas o una aseguradora, y para cuándo, porque si no se entregan a tiempo habrá problemas para el sistema.
 \end{itemize}
 
+\clearpage
 \section{Escenario 1. Extractora de aceite de palma}
 \input{escenarios/e1}
 
@@ -59,6 +61,13 @@ Para comparar los tres modelos de proceso~\cite{swebok2024} en cada escenario se
 \input{escenarios/framework}
 
 \section{Declaración de uso de IA}
+
+\begin{itemize}
+  \item \textbf{Herramienta y versión:} Claude Opus 5.5.
+  \item \textbf{Integrantes que la usaron:} Aldas Zambrano Alan Andrés (escenario 1, criterios y referencias) y Yépez Guagua Luis Antonio (escenario 3 y framework).
+  \item \textbf{Propósito:} corregir la redacción de las ideas expresadas por cada estudiante y explicar conceptos cuando hubo dudas. También se usó para preparar la estructura del documento en \LaTeX{} y el README a partir de las plantillas del docente. El contenido y las decisiones del análisis son de los estudiantes.
+  \item \textbf{Verificación:} cada celda se contrastó con el texto de su escenario en el material complementario, y se corrigieron las afirmaciones que exageraban lo que dice la fuente. Las referencias se verificaron con su DOI.
+\end{itemize}
 
 \bibliographystyle{IEEEtran}
 \bibliography{referencias}

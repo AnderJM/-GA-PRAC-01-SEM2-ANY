@@ -1,17 +1,17 @@
 \subsection{Matriz comparativa del escenario 1}
 
-\begin{center}
-\small
-\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|L|L|L|}
+{\small
+\begin{xltabular}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|L|L|L|}
 \hline
 \rowcolor{verdeuteq}\textcolor{white}{\textbf{Criterio}} & \textcolor{white}{\textbf{Secuencial (cascada)}} & \textcolor{white}{\textbf{Iterativo e incremental}} & \textcolor{white}{\textbf{Ágil}} \\ \hline
+\endhead
 K1. Estabilidad y cambios & Las reglas de seguridad las definió el fabricante y casi no cambiarán, por eso encajan con cascada. En cambio, el proveedor de sensores se elige en el tercer mes, así que ese requisito no se sabe desde el inicio y no encaja con cascada, que necesita establecer todo al inicio. & En el primer ciclo se definen las reglas de seguridad, que ya se conocen desde el inicio. Los requisitos de los sensores se dejan para un ciclo posterior, después del tercer mes, cuando se elija el proveedor. Esto encaja con el caso porque iterativo permite completar o cambiar requisitos en ciclos posteriores~\cite{larman2003}, mientras que cascada los mantiene fijos desde el inicio. & Ágil podría encajar en los reportes y las pantallas, porque aún no se sabe lo que se quiere y eso se puede cambiar después. Pero lo de seguridad casi no cambia, así que ágil no encaja para todo el sistema. \\ \hline
 K2. Partes interesadas y disponibilidad & El responsable de seguridad industrial debe aprobar cada función de protección, y cascada encaja porque trabaja con aprobaciones formales al terminar cada fase. Además, solo necesita al jefe de planta al inicio y en las aprobaciones, lo que se ajusta a que solo se reúne dos mañanas por semana. & Iterativo encaja porque el jefe de planta, con sus dos mañanas por semana, puede revisar el avance al cierre de cada ciclo. Lo difícil sería reunir a los operadores en cada cierre, porque trabajan en tres turnos. & Ágil no encaja porque el jefe de planta solo se reúne dos mañanas por semana, y eso es muy poco para la participación frecuente que necesita ágil. Además, los operadores trabajan en tres turnos, lo que hace difícil reunirlos seguido. \\ \hline
 K3. Tipo de sistema y criticidad & Es un sistema embebido donde ya hubo dos desbordes y un operador con quemaduras leves, por eso cascada encaja: documenta, aprueba y prueba cada requisito de seguridad antes de construir. & Iterativo encaja porque permite ir ciclo por ciclo verificando la seguridad y agregando requisitos nuevos si aparecen, siempre que cada ciclo incluya pruebas de seguridad formales. & Ágil es arriesgado porque, al documentar poco~\cite{inayat2015, heeager2018}, se puede dejar de lado algún requisito de seguridad, y en este sistema un error puede herir a un operador. \\ \hline
 K4. Riesgo principal & El mayor riesgo son los sensores, porque el proveedor se elige en el mes 3. Cascada lo empeora, ya que obliga a cerrar los requisitos antes de saber cómo se comunicarán esos equipos con el controlador. & Iterativo reduce el riesgo, porque permite dejar la comunicación con los sensores para un ciclo posterior al mes 3 y probarla en cuanto se conozca el proveedor. & Ágil podría adaptarse cuando llegue el proveedor, pero sin un cliente disponible seguido y con poca documentación es difícil controlar ese cambio en un sistema de seguridad. \\ \hline
 K5. Documentación y marco normativo o contractual & La aseguradora exige un documento de requisitos de seguridad aprobado y evidencia de pruebas antes de la puesta en marcha. Cascada encaja porque produce ese documento aprobado desde el inicio. & Iterativo también puede cumplirlo, porque el documento de requisitos se completa por versiones en cada ciclo~\cite{iso29148} y puede quedar aprobado antes de la puesta en marcha. & Ágil tendría problemas, porque documenta poco~\cite{inayat2015} y la aseguradora pide requisitos aprobados y pruebas de cada función de protección. \\ \hline
-\end{tabularx}
-\end{center}
+\end{xltabular}
+}
 
 \subsection{Recomendación y riesgos del escenario 1}
 
@@ -20,7 +20,7 @@ K5. Documentación y marco normativo o contractual & La aseguradora exige un doc
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.5cm}|L|}
 \hline
 \rowcolor{verdeuteq}\textcolor{white}{\textbf{Elemento}} & \textcolor{white}{\textbf{Respuesta}} \\ \hline
-Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & Un híbrido: cascada para las funciones de seguridad, porque probablemente no cambien en el futuro, e iterativo para los sensores, las pantallas y los reportes, que irán cambiando cada cierto tiempo. \\ \hline
+Modelo recomendado (puro o híbrido; si es híbrido, qué parte sigue cada modelo) & Un híbrido: cascada para las funciones de seguridad, porque probablemente no cambien en el futuro, e iterativo para los sensores, las pantallas y los reportes, que todavía no se conocen al inicio. \\ \hline
 Razón 1 (dato del escenario, criterio y consecuencia) & K5: la aseguradora exige un documento de requisitos de seguridad aprobado y pruebas de cada función de protección, por eso la parte de seguridad debe seguir cascada. \\ \hline
 Razón 2 & K1 y K4: el proveedor de sensores se elige en el mes 3, así que esa parte debe ir en un ciclo posterior del modelo iterativo. \\ \hline
 Razón 3 & K3: en el último año hubo dos desbordes y un operador con quemaduras leves; esto obliga a que la seguridad se documente y se pruebe antes de construir, como en cascada. \\ \hline
